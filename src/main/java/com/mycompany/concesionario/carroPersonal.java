@@ -16,16 +16,26 @@ public class carroPersonal extends carros {
     private String rines;
     private String cojineria;
 
-    public carroPersonal(String rines, String cojineria, String marca, String referencia, String color, int precio) {
+    /**
+     * Constructor de carro personal.
+     * @param marca 
+     * @param referencia
+     * @param color
+     * @param rines
+     * @param cojineria
+     * @param precio 
+     */
+    public carroPersonal(String marca, String referencia, String color, String rines, String cojineria, int precio) {
         super(marca, referencia, color, precio);
         this.rines = rines;
         this.cojineria = cojineria;
     }
-
     
-
+    /**
+     * 
+     * @Getter y Setter.
+     */
     
-
     public String getRines() {
         return rines;
     }
@@ -42,36 +52,6 @@ public class carroPersonal extends carros {
         this.cojineria = cojineria;
     }
 
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getReferencia() {
-        return referencia;
-    }
-
-    public void setReferencia(String referencia) {
-        this.referencia = referencia;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
+        
     
 }

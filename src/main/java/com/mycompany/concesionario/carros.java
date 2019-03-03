@@ -24,7 +24,6 @@ public class carros {
     protected String color;
     protected int precio;
     
-    private ArrayList<carroDeportivo> listaCarroDep;
 
     public carros(String marca, String referencia, String color, int precio) {
         this.marca = marca;
@@ -35,7 +34,7 @@ public class carros {
 
     /**
      * 
-     * @return 
+     * Setter y Getter
      */
     
     public String getMarca() {
@@ -69,19 +68,5 @@ public class carros {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
-
-    public ArrayList<carroDeportivo> getListaCarroDep() {
-        return listaCarroDep;
-    }
-
-    public void setListaCarroDep(ArrayList<carroDeportivo> listaCarroDep) {
-        this.listaCarroDep = listaCarroDep;
-    }
-
-
-        
+}
     
-    
-
-       
-}   
