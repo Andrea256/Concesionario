@@ -8,10 +8,8 @@ package com.mycompany.concesionario;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  *
@@ -55,14 +53,26 @@ public class inventario {
     
           
     public void verCarroDep(){    
-        for(carroDeportivo cD: listaCarroDep) {
+        //System.out.println("dfghjhgdsdfgh");
+        for (int i = 0; i < listaCarroDep.size(); i++) {
             //System.out.println(cD);
-            System.out.println("Marca: "+ cD.getMarca());
-            System.out.println("Referencia: "+ cD.getReferencia());
-            System.out.println("Color: "+ cD.getColor());
-            System.out.println("Precio "+ cD.getPrecio());
-            System.out.println("Velocidad: "+ cD.getVelocidad());
+            //System.out.println("dfghjhgdsdfgh12345678");
+            System.out.println("Marca: "+ listaCarroDep.get(i).getMarca());
+            System.out.println("Referencia: "+ listaCarroDep.get(i).getReferencia());
+            System.out.println("Color: "+ listaCarroDep.get(i).getColor());
+            System.out.println("Precio "+ listaCarroDep.get(i).getPrecio());
+            System.out.println("Velocidad: "+ listaCarroDep.get(i).getVelocidad());
         }
     }
-   
+    public void quemarCarros() {
+        carroDeportivo carDep = new carroDeportivo("asd", "qwe", "ewq", 123, "dsf");
+        carroDeportivo carDep1 = new carroDeportivo("asd", "qwe", "ewq", 123, "dsf");
+        carroDeportivo carDep2 = new carroDeportivo("asd", "qwe", "ewq", 123, "dsf");
+        carroDeportivo carDep3 = new carroDeportivo("asd", "qwe", "ewq", 123, "dsf");
+        listaCarroDep.add(carDep);
+        listaCarroDep.add(carDep1);
+        listaCarroDep.add(carDep2);
+        listaCarroDep.add(carDep3);
+        
+    }
 }
