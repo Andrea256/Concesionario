@@ -16,12 +16,19 @@ public class carroMaquinaria extends carros {
     public void agregarCarro(){
          
     }
-
+    /**
+     * Constructor de maquinaria.
+     * @param tipo variable que contiene el tipo de maquinaria.
+     * @param marca variable que contiene la marca de maquinaria.
+     * @param referencia variable que contienela referencia de maquinaria,
+     * @param color variable que contiene el color de maquinaria.
+     * @param precio variable que contiene el precio de maquinaria.
+     */
     public carroMaquinaria(String tipo, String marca, String referencia, String color, int precio) {
         super(marca, referencia, color, precio);
         this.tipo = tipo;
     }
-    
+
     /**
      * 
      * Getter y Setter 

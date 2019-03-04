@@ -24,7 +24,13 @@ public class carros {
     protected String color;
     protected int precio;
     
-
+    /**
+     * 
+     * @param marca variable que contiene la marca de los carros.
+     * @param referencia variable que contiene la referencia de los carros.
+     * @param color variable que contiene el color de los carros.
+     * @param precio variable que contiene el precio de los carros.
+     */
     public carros(String marca, String referencia, String color, int precio) {
         this.marca = marca;
         this.referencia = referencia;

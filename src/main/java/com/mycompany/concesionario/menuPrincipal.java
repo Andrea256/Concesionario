@@ -20,9 +20,12 @@ public class menuPrincipal {
 
     Scanner entrada = new Scanner(System.in);
     inventario inv = new inventario();
-    venta vent = new venta(0);
     factura fact = new factura();
     
+    /**
+     * 
+     * Menu principal.
+     */
     public void menu() throws IOException {     
 
         while (true) {
@@ -53,7 +56,7 @@ public class menuPrincipal {
      * Sub menu para agregar, ver, modificar y eliminar carros.
      */
     private void inventario() throws IOException {
-
+            
         System.out.println("--- Inventario ---");
         System.out.println("1.Agregar carros");
         System.out.println("2.Ver carros");
@@ -82,10 +85,10 @@ public class menuPrincipal {
                         inv.agregarCarroEstandar();
                         break;
                     case 3:
-                        //i.agregarMaquinaria();
+                        inv.agregarMaquinaria();
                         break;
                     case 4:
-                        //i.agregarCarroPersonalizado();
+                        inv.agregarCarroDeportivo();
                         break;
                     default:
                         System.out.println("Opcion invalida");
@@ -94,9 +97,11 @@ public class menuPrincipal {
                 break;
 
             case 2:
-                System.out.println("Ver carros \n");
-                inv.verCarroDep();inv.verCarroEst();
-                
+                System.out.println("Ver carros");
+                inv.verCarroDep(); System.out.println("\n");
+                inv.verCarroEst(); System.out.println("\n");
+                inv.verCarroMaq(); System.out.println("\n");
+                inv.verCarroPer(); System.out.println("\n");               
                 break;
             case 3:
                 
@@ -139,12 +144,15 @@ public class menuPrincipal {
                 break;
             case 2:
                 System.out.println("--- Estandar ---");
+                inv.modifCarroEstandar();
                 break;
             case 3:
                 System.out.println("--- Maquinaria ---");
+                inv.modifMaq();
                 break;
             case 4:
                 System.out.println("--- Personalizado ---");
+                inv.modifCarroPer();
                 break;
         }
         
@@ -175,7 +183,11 @@ public class menuPrincipal {
                 break;
             case 3:
                 System.out.println("--- Maquinaria ---");
-                //inv.eliminarCarroEstandar();
+                inv.eliminarMaq();
+                break;
+            case 4:
+                System.out.println("--- Personalizado ---");
+                inv.eliminarCarroPer();
                 break;
         }
     }
@@ -187,6 +199,7 @@ public class menuPrincipal {
         
         System.out.println("--- Venta ---");
         System.out.println("1.Agregar venta");
+        System.out.println("2.Ver ventas");
 
         int opVen = entrada.nextInt();
         
@@ -221,7 +234,10 @@ public class menuPrincipal {
                         venderPer();
                         break;
                 }
-                break; 
+                break;
+            case 2:
+                fact.verVenta();
+                break;
         }   
     }
     /**
@@ -242,7 +258,11 @@ public class menuPrincipal {
                 break;
             case 2:
                 System.out.println("--- Venta deportivos ---");
-                fact.asigVendedor();
+                //inv.asigVendedor();
+                inv.venderDep();
+                break;
+            case 3:
+                //inv.venderDep();
                 break;
         }
     }

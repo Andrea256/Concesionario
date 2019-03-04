@@ -16,20 +16,26 @@ import java.util.Scanner;
 public class carroDeportivo extends carros {
 
     protected String velocidad;   
-
+    
+    /**
+     * Constructor de carro deportivo.
+     * @param marca variable que contiene la marca de carro deportivo
+     * @param referencia variable que contiene la referencia de carro deportivo
+     * @param color variable que contiene el color de carro deportivo
+     * @param precio variable que contiene el precio de carro deportivo
+     * @param velocidad variable que contien la velcidad de carro deportivo
+     */
+    
     public carroDeportivo(String marca, String referencia, String color, int precio, String velocidad) {
         super(marca, referencia, color, precio);
         this.velocidad = velocidad;
     }
-    
-    
+      
     /**
      * 
      * Getter y Setters 
      */
 
-    
-    
     public String getVelocidad() {
         return velocidad;
     }

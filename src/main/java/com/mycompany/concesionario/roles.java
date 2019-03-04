@@ -18,10 +18,10 @@ public class roles {
     
     /**
      * Constructor de roles.
-     * @param nombre
-     * @param cedula
-     * @param celular
-     * @param direccion 
+     * @param nombre variable que contiene el nombre.
+     * @param cedula variable que contiene la cedula
+     * @param celular variable que contiene el celular
+     * @param direccion variable que contiene la direccion
      */
 
     public roles(String nombre, String cedula, int celular, String direccion) {

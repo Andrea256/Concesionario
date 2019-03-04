@@ -14,14 +14,17 @@ public class carroEstandar extends carros {
     public void agregarCarro(){
         
     } 
-
+    /**
+     * Constructor de carro Estandar 
+     * @param marca variable que contiene la marca de carro estandar
+     * @param referencia variable que contiene la referencia de carro estandar
+     * @param color variable que contiene el color de carro estandar
+     * @param precio variable que contiene el precio de carro estandar
+     */
     public carroEstandar(String marca, String referencia, String color, int precio) {
         super(marca, referencia, color, precio);
     }
-    
-    
-
-    
+     
     /**
      * 
      * Getter y Setter 
